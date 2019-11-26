@@ -1,0 +1,13 @@
+.success_msg{
+    width: 50%;
+    margin: auto;
+    border: 1px solid #000;
+    background-color: rgb(153, 172, 157);
+    padding: 5px 19px;
+    margin: 25px 40px;
+    font-family: cursive;
+}
+
+body{
+    background-image: linear-gradient(80deg, blue, #f06d06)
+}
