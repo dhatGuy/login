@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form validation with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+   <form name="vform" onsubmit="return Validate()">
+   	<div id="username_div">
+   	  <label>Username</label> <br>
+   	  <input type="text" name="username" class="textInput">
+   	  <div class="name_error"></div>
+   	</div>
+   	<div id="password_div">
+   	  <label>Password</label> <br>
+   	  <input type="password" name="password" class="textInput" tooltip="Enter a valid ">
+   	   <div class="password_error"></div>
+	</div>
+   	<div>
+   	<input type="submit" name="login" value="Login" class="btn">
+   	</div>
+   </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
