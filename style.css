@@ -1,12 +1,10 @@
 .wrapper {
-    width: 25%;
+    width: 50%;
     margin: 50px auto;
     padding: 50px;
     background: #D7FBFF;
   }
-  form {
-    margin: 30px auto;
-  }
+  
   .textInput {
     border: none;
     height: 28px;
@@ -30,3 +28,9 @@
     cursor: pointer;
   }
 
+header{
+  width: 50%;
+    margin: 50px auto;
+    padding: 15px 50px;
+    background-color: #d7fbff;
+}
