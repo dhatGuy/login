@@ -1,13 +1,18 @@
 .success_msg{
     width: 50%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid #000;
-    background-color: rgb(153, 172, 157);
+    background-color: rgb(164, 178, 243);
     padding: 5px 19px;
     margin: 25px 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
-    background-image: linear-gradient(80deg, blue, #f06d06)
+    background-color: oldlace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

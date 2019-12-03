@@ -11,7 +11,9 @@ password.addEventListener('blur', passwordVerify, true);
 function Validate() {
   //regex conditions
   let usernameRegex = /^[a-zA-Z][0-9A-Za-z]+$/;
+  let alphanumeric = /[A-Za-z].*\d|\d.*[A-Za-z]/
   let passwordRegex = /[A-Z].*\d|\d.*[A-Z]/;
+
   // validate username if empty
   if (username.value == "") {
     username.style.border = "1px solid red";
@@ -28,6 +30,15 @@ function Validate() {
     username.focus();
     return false;
   }
+
+  if (username.value.match(alphanumeric) == null) {
+    password.style.border = "1px solid red";
+    document.getElementById('username_div').style.color = "red";
+    name_error.textContent = "Username should be alphanumeric.";
+    username.focus();
+    return false;
+  }
+
   //validate username if character greater than 30
   if (username.value.length > 30) {
     username.style.border = "1px solid red";
@@ -40,7 +51,7 @@ function Validate() {
   if (username.value.match(usernameRegex) == null) {
       username.style.border = "1px solid red";
       document.getElementById('username_div').style.color = "red";
-      name_error.textContent = "Username must be start with a letter with no spaces";
+      name_error.textContent = "Username must start with a letter with no spaces";
       username.focus();
       return false;
     }
